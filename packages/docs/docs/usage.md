@@ -9,7 +9,7 @@ npm install -g sugar18
 
 yarn global add sugar18
 
-pnpm add sugar18 --global
+pnpm add sugar18 --g
 ```
 
 ## 配置项
@@ -89,6 +89,14 @@ i18n.tExtend = (key, values) => {
 };
 
 export default i18n;
+```
+
+## CLI 命令
+
+只需要执行一个简单的命令`trust`即可
+
+```shell
+trust
 ```
 
 ## 示例
