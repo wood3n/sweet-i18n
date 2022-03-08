@@ -2,6 +2,11 @@
   "name": "vs-extensions",
   "version": "1.0.0",
   "publisher": "wood3n",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wood3n/sweet-i18n.git",
+    "directory": "packages/vs-extensions"
+  },
   "displayName": "sweet-i18n",
   "description": "sweet-i18n vscode smart prompt extension",
   "engines": {
@@ -11,7 +16,7 @@
     "Programming Languages",
     "Keymaps"
   ],
-  "icon": "https://github.com/wood3n/wood3n/blob/108baf9ea9d8985d173a603f2ff4a81da4482f85/logo.png",
+  "icon": "images/logo.png",
   "keywords": [
     "i18n",
     "vue",
@@ -49,6 +54,9 @@
   },
   "main": "./lib/index.js",
   "scripts": {
+    "vscode:prepublish": "node esbuild.js",
+    "package": "pnpm vsce package --no-dependencies",
+    "publish": "pnpm vsce publish --no-dependencies",
     "dev": "node esbuild.js --watch",
     "build": "node esbuild.js"
   },

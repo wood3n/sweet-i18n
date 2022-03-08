@@ -6,7 +6,7 @@ function build() {
   const { watch } = require("minimist")(process.argv.slice(2));
 
   const config = {
-    entryPoints: ["./src/index.ts"],
+    entryPoints: ["./src/extension.ts"],
     bundle: true,
     minify: !watch,
     platform: "node",

@@ -24,7 +24,7 @@
         "--extensionDevelopmentPath=${workspaceFolder}\\packages\\vs-extensions"
       ],
       "runtimeExecutable": "esno",
-      "program": "${workspaceFolder}\\packages\\vs-extensions\\src\\index.ts"
+      "program": "${workspaceFolder}\\packages\\vs-extensions\\src\\extension.ts"
     }
   ]
 }
