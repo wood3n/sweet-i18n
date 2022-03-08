@@ -15,6 +15,10 @@ const sidebars = {
           type: "doc",
           id: "usage",
         },
+        {
+          type: "doc",
+          id: "vsprompt",
+        },
       ],
     },
   ],
